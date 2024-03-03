@@ -1,0 +1,391 @@
+
+
+.space-grotesk-maxi {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400%;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1{
+    font-size: 100px;
+    line-height: 100px;
+    color: #222;
+}
+h2{
+    font-size: 80px;
+    line-height: 70px;
+    color: #222;
+}
+h4{
+    font-size: 30px;
+    color: #222;
+}
+h6{
+    font-size: 12px;
+    font-weight: 700;
+}
+p{
+    font-size: 24px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    padding: 40px 0;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.02 ease;
+}
+body{
+    width: 100%;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #A39CDF;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    top: 0;
+    left: 0;
+    position: sticky;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 15px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.3ms ease;
+
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+
+/*home page*/
+#hero{
+    background-image: url(img/girlwithbag.jpg);
+    height: 90vh;
+    width: auto;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: #088178;
+}
+#hero button{
+    background-color: #088178; /* Green background */
+  border: none; /* Remove default button border */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Add some padding */
+  text-align: center; /* Center text horizontally */
+  text-decoration: none; /* Remove default text underline */
+  display: inline-block; /* Make it behave like a block-level element */
+  font-size: 16px; /* Set the font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Change button color on hover */
+.custom-button:hover {
+  background-color: #45a049;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    
+    width: 180px;
+    text-align: center;
+    padding-left: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0,0.03);
+    border: 1px solid #cee7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+    padding-bottom: 15px;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221,0.1);
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px; 
+
+}
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+#feature .fe-box:nth-child(2) .h6{
+
+    background-color: #fddde4
+}
+#feature .fe-box:nth-child(3) .h6{
+
+    background-color: #fddde4
+}
+
+#feature .fe-box:nth-child(4) .h6{
+
+    background-color: #fddde4
+}
+
+#feature .fe-box:nth-child(5) .h6{
+
+    background-color: #fddde4
+}
+
+#feature .fe-box:nth-child(6) .h6{
+
+    background-color: #fddde4
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: ltr;
+    text-align: left;
+    
+  }
+.rating > i {
+    display: inline-block;
+    position: relative;
+    width: 0.8em;
+    
+    font-size: 24px;
+    color: #ffd700;
+  }
+.rating > i:hover:before,
+.rating > i:hover ~ i:before {
+     content: "\2605";
+     position: absolute;
+     color: #ffcc00;
+     
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+
+}
+#product1{
+    text-align: center;
+    
+}
+#product1 .pro{
+    width: 25%;
+    max-width: 300px;
+    padding: 10px 10px;
+    border: 2px solid #cce7d0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0,0.03);
+    margin: 15px 0;
+    transition: 0.02 ease;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0,0.06);
+    
+    
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 15px;
+}
+#product1 .pro .des h5{
+    color: #1a1a1a;
+    font-size: 24px;
+}
+
+#product1 .pro .des i{
+  font-size: 24px;
+}
+#product1 .pro .des h4{
+    font-size: 24px;
+    color: #088178;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/Banner.jpg);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: #fff;
+    font-size: 30px;
+
+}
+#banner h2{
+    color: #fff;
+    font-size: 60px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: #e43636;
+
+}
+#banner button:hover{
+    background-color: #088178;
+    color: #fff;
+}
+
+/*Start media quiry*/
+@media (max-width: 799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+        
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        font-size: 20px;
+        color: #088178;
+        padding-left: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #000;
+        font-size: 0.5px;
+    }
+    #lg-bag{
+        display: none;
+    }
+    #hero {
+        height: 90vh;
+        padding: 0 80px;
+        background-position: top 0 right -450px   ;
+    }
+    #feature {
+        
+        
+        justify-content: center;
+        
+    }
+    #feature .fe-box {
+        
+        margin: 15px 15px;
+        
+    }
+    #product1 .pro-container {
+        
+        justify-content: center;
+        
+    }
+    #product1 .pro {
+        
+        margin: 15px ;
+        
+    }
+   
+    
+    
+}
