@@ -128,9 +128,6 @@ body{
     justify-content: center;
     
 }
-#hero h4{
-    padding-bottom: 15px;
-}
 #hero h1{
     color: #088178;
 }
@@ -386,6 +383,74 @@ body{
         
     }
    
+   
+    
+}
+@media (max-width: 477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+    #header {
+        padding: 10px 10px;
+        
+    }
     
     
+
+    #hero {
+        padding: 0 20px;
+        background-position: 62%;
+
+    }
+    h4 {
+        font-size: 20px;
+        
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        font-size: 28px;
+        
+        margin: 0;
+        padding: 0;
+    
+        
+    }
+    h1 {
+        font-size: 38px;
+        
+        margin: 0;
+        padding: 0;
+        
+    }
+    p {
+        font-size: 15px;
+        
+        
+    }
+    #feature .fe-box {
+        width: 167px;
+       
+        margin: 0 0 15px 0;
+        
+    }
+    #feature {
+        
+        justify-content: space-between;
+        
+    }
+    #product1 .pro {
+        width: 100%;
+        
+    }
+    #banner {
+        height: 30vh;
+        
+    }
+    #banner h2 {
+        color: #fff;
+        font-size: 30px;
+        padding: 0 10px;
+        
+    }
 }
